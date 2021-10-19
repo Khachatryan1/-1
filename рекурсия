@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+const int c = 99;
+void Quadrat(int n, int lim)
+{
+    if(n == lim){
+        return;}
+    else if(n>c)
+        cout << n*n << '\n';
+    Quadrat(n+1, lim);
+    return;
+}
+
+int main()
+{
+    Quadrat(80, 121);
+    return 0;
+}
